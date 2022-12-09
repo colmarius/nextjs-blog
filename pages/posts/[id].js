@@ -6,6 +6,7 @@ import utilStyles from '../../styles/utils.module.css';
 
 
 export default function Posts({ title, date, contentHtml }) {
+  if (!title) return null;
   return (
     <Layout>
       <Head>
